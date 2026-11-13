@@ -1,0 +1,22 @@
+{
+  "observations": 720,
+  "cameras": 3,
+  "workers": 6,
+  "helmet_seconds": 583.0,
+  "missing_helmet_seconds": 82.0,
+  "unknown_seconds": 55.0,
+  "observed_seconds": 720.0,
+  "restricted_seconds": 75.0,
+  "helmet_present_observations": 583,
+  "helmet_absent_observations": 82,
+  "helmet_unknown_observations": 55,
+  "public_image_observations": 0,
+  "helmet_incidents": 5,
+  "zone_incidents": 4,
+  "high_priority_incidents": 4,
+  "assessable_seconds": 665.0,
+  "compliance_pct": 87.67,
+  "unknown_pct": 7.64,
+  "worker_definition": "distinct camera/session/track identities, not unique people",
+  "last_updated": "2026-11-13T17:05:38Z"
+}

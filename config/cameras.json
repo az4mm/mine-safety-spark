@@ -1,0 +1,11 @@
+{
+  "prototype": true,
+  "description": "Illustrative camera and zone configuration for a controlled course demonstration. No real mine camera connection is implied.",
+  "cameras": [
+    {"camera_id": "CAM-01", "name": "Access gallery", "zone_id": "GALLERY", "helmet_required": true, "restricted_polygon": [[0.68,0.32],[0.96,0.32],[0.96,0.92],[0.68,0.92]]},
+    {"camera_id": "CAM-02", "name": "Equipment bay", "zone_id": "EQUIPMENT", "helmet_required": true, "restricted_polygon": [[0.58,0.35],[0.95,0.35],[0.95,0.95],[0.58,0.95]]},
+    {"camera_id": "CAM-03", "name": "Service tunnel", "zone_id": "SERVICE", "helmet_required": true, "restricted_polygon": [[0.62,0.40],[0.96,0.40],[0.96,0.95],[0.62,0.95]]}
+  ],
+  "polygon_coordinates": "normalised x,y in [0,1]; configure for each actual fixed camera",
+  "priorities": {"helmet_missing": "medium", "restricted_zone": "high"}
+}

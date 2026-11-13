@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mine-safety-spark"
+version = "1.0.0"
+description = "Computer vision evidence and distributed Apache Spark analytics for a mining safety course prototype"
+requires-python = ">=3.10,<3.14"
+license = "AGPL-3.0-or-later"
+dependencies = [
+  "pyspark==4.0.1",
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.34,<1",
+  "numpy>=2.0,<2.3",
+  "opencv-python-headless==4.12.0.88",
+  "onnxruntime==1.23.2",
+  "Pillow>=10,<14",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9", "httpx>=0.27,<1", "playwright>=1.50,<2"]
+
+[project.scripts]
+mine-safety = "mine_safety.cli:main"
+
+[tool.setuptools]
+packages = ["mine_safety"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["spark: integration tests requiring Java and Apache Spark"]

@@ -1,0 +1,44 @@
+[
+  {
+    "camera_id": "CAM-01",
+    "zone_id": "GALLERY",
+    "observations": 240,
+    "helmet_seconds": 195.0,
+    "missing_helmet_seconds": 20.0,
+    "unknown_seconds": 25.0,
+    "observed_seconds": 240.0,
+    "helmet_incidents": 1,
+    "zone_incidents": 0,
+    "compliance_pct": 90.7,
+    "unknown_pct": 10.42,
+    "status": "warning"
+  },
+  {
+    "camera_id": "CAM-02",
+    "zone_id": "EQUIPMENT",
+    "observations": 240,
+    "helmet_seconds": 198.0,
+    "missing_helmet_seconds": 42.0,
+    "unknown_seconds": 0.0,
+    "observed_seconds": 240.0,
+    "helmet_incidents": 3,
+    "zone_incidents": 2,
+    "compliance_pct": 82.5,
+    "unknown_pct": 0.0,
+    "status": "high"
+  },
+  {
+    "camera_id": "CAM-03",
+    "zone_id": "SERVICE",
+    "observations": 240,
+    "helmet_seconds": 190.0,
+    "missing_helmet_seconds": 20.0,
+    "unknown_seconds": 30.0,
+    "observed_seconds": 240.0,
+    "helmet_incidents": 1,
+    "zone_incidents": 2,
+    "compliance_pct": 90.48,
+    "unknown_pct": 12.5,
+    "status": "high"
+  }
+]

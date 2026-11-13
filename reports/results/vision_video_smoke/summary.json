@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "fixture_type": "synthetic repeated public photo MP4",
+  "frames_encoded": 12,
+  "frames_processed": 12,
+  "fps": 3,
+  "person_observations": 48,
+  "unique_tracks": 4,
+  "zone_incident_ids": 4,
+  "source_type": "synthetic",
+  "notes": "Tests IO/tracking stability only; no real motion or tracking accuracy claim.",
+  "attribution": "Oilshale mine 01 by Peeter paaver, CC BY 4.0; resized and repeated in an MP4."
+}

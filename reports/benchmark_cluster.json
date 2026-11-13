@@ -1,0 +1,69 @@
+{
+  "measured_at": "2026-11-13T17:09:16.718918+00:00",
+  "kind": "measured Apache Spark analytics benchmark",
+  "data_provenance": "deterministically generated synthetic observations; no accuracy claims",
+  "topology_note": "local[N] is N threads on one host; standalone workers on the same host share physical resources",
+  "results": [
+    {
+      "master": "standalone",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 100000,
+      "output_groups": 1668,
+      "aggregated_observations": 100000,
+      "repeats": 3,
+      "startup_seconds": 4.5647,
+      "prepare_seconds": 4.7365,
+      "warmup_seconds": 2.8062,
+      "run_seconds": [
+        0.6335,
+        0.6372,
+        0.5495
+      ],
+      "median_seconds": 0.6335,
+      "rows_per_second": 157841.9,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    },
+    {
+      "master": "standalone",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 1000000,
+      "output_groups": 16668,
+      "aggregated_observations": 1000000,
+      "repeats": 3,
+      "startup_seconds": 4.7777,
+      "prepare_seconds": 5.2058,
+      "warmup_seconds": 2.9018,
+      "run_seconds": [
+        1.1155,
+        1.0359,
+        0.7875
+      ],
+      "median_seconds": 1.0359,
+      "rows_per_second": 965308.8,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    }
+  ],
+  "publication_note": "Runtime identities, connection addresses and absolute local paths are omitted; numerical measurements and test outcomes are unchanged."
+}

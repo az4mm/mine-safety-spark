@@ -1,0 +1,16 @@
+{
+  "observations": 720,
+  "cameras": 3,
+  "workers": 6,
+  "helmet_incidents": 5,
+  "zone_incidents": 4,
+  "assessable_seconds": 665.0,
+  "helmet_seconds": 583.0,
+  "missing_helmet_seconds": 82.0,
+  "unknown_seconds": 55.0,
+  "restricted_seconds": 75.0,
+  "compliance_pct": 87.66917293233082,
+  "unknown_pct": 7.638888888888889,
+  "source_type": "synthetic",
+  "note": "Reference totals from deterministic scenario definitions. These are not measured CV accuracy."
+}

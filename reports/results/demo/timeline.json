@@ -1,0 +1,14 @@
+[
+  {
+    "time": "2026-11-13T08:00:00Z",
+    "helmet_incidents": 3,
+    "zone_incidents": 2,
+    "observations": 360
+  },
+  {
+    "time": "2026-11-13T08:01:00Z",
+    "helmet_incidents": 2,
+    "zone_incidents": 2,
+    "observations": 360
+  }
+]

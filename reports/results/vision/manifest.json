@@ -1,0 +1,952 @@
+{
+  "source_type": "public_image",
+  "engine": "ONNX Runtime CPU",
+  "images_processed": 23,
+  "person_observations": 73,
+  "helmet_status_counts": {
+    "unknown": 18,
+    "present": 50,
+    "absent": 5
+  },
+  "detection_counts": {
+    "Hardhat": 57,
+    "person": 73,
+    "NO-Hardhat": 8
+  },
+  "observations_path": "outputs/vision/observations.jsonl",
+  "assets": [
+    {
+      "path": "outputs/vision/oilshale_mine_01/oilshale_mine_01_frame_000000.jpg",
+      "title": "Underground oil shale mine, Estonia",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. underground mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/oilshale_mine_01/oilshale_mine_01_frame_000000.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Oilshale_mine_01.jpg",
+      "author": "Peeter paaver",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "underground mining"
+    },
+    {
+      "path": "outputs/vision/construction_workers/construction_workers_frame_000000.jpg",
+      "title": "Ironworkers at a construction site",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/construction_workers/construction_workers_frame_000000.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Construction_Workers.jpg",
+      "author": "Paul Keleher (listed as Paul Keheler in the Commons description)",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "domain": "construction, not mining"
+    },
+    {
+      "path": "outputs/vision/construction_iran_02/construction_iran_02_frame_000000.jpg",
+      "title": "Construction silhouette under difficult lighting",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/construction_iran_02/construction_iran_02_frame_000000.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Construction_workers_in_Iran_02.jpg",
+      "author": "Mostafa Meraji / Mostafameraji",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "domain": "construction, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0000/test_0000_frame_000000.jpg",
+      "title": "Public hardhat test row 0",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0000/test_0000_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0001/test_0001_frame_000000.jpg",
+      "title": "Public hardhat test row 1",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0001/test_0001_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0002/test_0002_frame_000000.jpg",
+      "title": "Public hardhat test row 2",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0002/test_0002_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0003/test_0003_frame_000000.jpg",
+      "title": "Public hardhat test row 3",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0003/test_0003_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0004/test_0004_frame_000000.jpg",
+      "title": "Public hardhat test row 4",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0004/test_0004_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0005/test_0005_frame_000000.jpg",
+      "title": "Public hardhat test row 5",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0005/test_0005_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0006/test_0006_frame_000000.jpg",
+      "title": "Public hardhat test row 6",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0006/test_0006_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0007/test_0007_frame_000000.jpg",
+      "title": "Public hardhat test row 7",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0007/test_0007_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0008/test_0008_frame_000000.jpg",
+      "title": "Public hardhat test row 8",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0008/test_0008_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0009/test_0009_frame_000000.jpg",
+      "title": "Public hardhat test row 9",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0009/test_0009_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0010/test_0010_frame_000000.jpg",
+      "title": "Public hardhat test row 10",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0010/test_0010_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0011/test_0011_frame_000000.jpg",
+      "title": "Public hardhat test row 11",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0011/test_0011_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0012/test_0012_frame_000000.jpg",
+      "title": "Public hardhat test row 12",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0012/test_0012_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0013/test_0013_frame_000000.jpg",
+      "title": "Public hardhat test row 13",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0013/test_0013_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0014/test_0014_frame_000000.jpg",
+      "title": "Public hardhat test row 14",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0014/test_0014_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0015/test_0015_frame_000000.jpg",
+      "title": "Public hardhat test row 15",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0015/test_0015_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0016/test_0016_frame_000000.jpg",
+      "title": "Public hardhat test row 16",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0016/test_0016_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0017/test_0017_frame_000000.jpg",
+      "title": "Public hardhat test row 17",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0017/test_0017_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0018/test_0018_frame_000000.jpg",
+      "title": "Public hardhat test row 18",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0018/test_0018_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    },
+    {
+      "path": "outputs/vision/hardhat_0019/test_0019_frame_000000.jpg",
+      "title": "Public hardhat test row 19",
+      "kind": "image",
+      "source_type": "public_image",
+      "description": "Actual ONNX inference on a public photograph. construction/web dataset, not mining. Model predictions, not verified incidents.",
+      "url": "/assets/outputs/vision/hardhat_0019/test_0019_frame_000000.jpg",
+      "source_url": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "author": "Roboflow Universe Projects / keremberke",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "domain": "construction/web dataset, not mining"
+    }
+  ],
+  "results": [
+    {
+      "id": "oilshale_mine_01",
+      "title": "Underground oil shale mine, Estonia",
+      "source": "https://commons.wikimedia.org/wiki/File:Oilshale_mine_01.jpg",
+      "domain": "underground mining",
+      "person_observations": 4,
+      "detection_counts": {
+        "Hardhat": 1,
+        "person": 4
+      },
+      "helmet_status_counts": {
+        "unknown": 3,
+        "present": 1
+      },
+      "inference_latency_ms": {
+        "mean": 279.87227099993106,
+        "p95": 279.87227099993106
+      },
+      "report_path": "outputs/vision/oilshale_mine_01/vision_report.json"
+    },
+    {
+      "id": "construction_workers",
+      "title": "Ironworkers at a construction site",
+      "source": "https://commons.wikimedia.org/wiki/File:Construction_Workers.jpg",
+      "domain": "construction, not mining",
+      "person_observations": 2,
+      "detection_counts": {
+        "Hardhat": 1,
+        "person": 2
+      },
+      "helmet_status_counts": {
+        "present": 1,
+        "unknown": 1
+      },
+      "inference_latency_ms": {
+        "mean": 165.26067399991007,
+        "p95": 165.26067399991007
+      },
+      "report_path": "outputs/vision/construction_workers/vision_report.json"
+    },
+    {
+      "id": "construction_iran_02",
+      "title": "Construction silhouette under difficult lighting",
+      "source": "https://commons.wikimedia.org/wiki/File:Construction_workers_in_Iran_02.jpg",
+      "domain": "construction, not mining",
+      "person_observations": 0,
+      "detection_counts": {},
+      "helmet_status_counts": {},
+      "inference_latency_ms": {
+        "mean": 154.81179500011422,
+        "p95": 154.81179500011422
+      },
+      "report_path": "outputs/vision/construction_iran_02/vision_report.json"
+    },
+    {
+      "id": "hardhat_0000",
+      "title": "Public hardhat test row 0",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 1,
+      "detection_counts": {
+        "person": 1
+      },
+      "helmet_status_counts": {
+        "unknown": 1
+      },
+      "inference_latency_ms": {
+        "mean": 219.94897700005822,
+        "p95": 219.94897700005822
+      },
+      "report_path": "outputs/vision/hardhat_0000/vision_report.json"
+    },
+    {
+      "id": "hardhat_0001",
+      "title": "Public hardhat test row 1",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 3,
+      "detection_counts": {
+        "NO-Hardhat": 3,
+        "person": 3
+      },
+      "helmet_status_counts": {
+        "unknown": 2,
+        "absent": 1
+      },
+      "inference_latency_ms": {
+        "mean": 213.7788410000212,
+        "p95": 213.7788410000212
+      },
+      "report_path": "outputs/vision/hardhat_0001/vision_report.json"
+    },
+    {
+      "id": "hardhat_0002",
+      "title": "Public hardhat test row 2",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 3,
+      "detection_counts": {
+        "NO-Hardhat": 4,
+        "person": 3
+      },
+      "helmet_status_counts": {
+        "absent": 3
+      },
+      "inference_latency_ms": {
+        "mean": 204.24608999974225,
+        "p95": 204.24608999974225
+      },
+      "report_path": "outputs/vision/hardhat_0002/vision_report.json"
+    },
+    {
+      "id": "hardhat_0003",
+      "title": "Public hardhat test row 3",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 2,
+      "detection_counts": {
+        "Hardhat": 1,
+        "person": 2
+      },
+      "helmet_status_counts": {
+        "unknown": 1,
+        "present": 1
+      },
+      "inference_latency_ms": {
+        "mean": 201.11675600037415,
+        "p95": 201.11675600037415
+      },
+      "report_path": "outputs/vision/hardhat_0003/vision_report.json"
+    },
+    {
+      "id": "hardhat_0004",
+      "title": "Public hardhat test row 4",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 2,
+      "detection_counts": {
+        "person": 2
+      },
+      "helmet_status_counts": {
+        "unknown": 2
+      },
+      "inference_latency_ms": {
+        "mean": 145.94323000028453,
+        "p95": 145.94323000028453
+      },
+      "report_path": "outputs/vision/hardhat_0004/vision_report.json"
+    },
+    {
+      "id": "hardhat_0005",
+      "title": "Public hardhat test row 5",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 5,
+      "detection_counts": {
+        "Hardhat": 6,
+        "person": 5
+      },
+      "helmet_status_counts": {
+        "present": 5
+      },
+      "inference_latency_ms": {
+        "mean": 152.03859300027034,
+        "p95": 152.03859300027034
+      },
+      "report_path": "outputs/vision/hardhat_0005/vision_report.json"
+    },
+    {
+      "id": "hardhat_0006",
+      "title": "Public hardhat test row 6",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 1,
+      "detection_counts": {
+        "Hardhat": 1,
+        "person": 1
+      },
+      "helmet_status_counts": {
+        "present": 1
+      },
+      "inference_latency_ms": {
+        "mean": 163.9451379996899,
+        "p95": 163.9451379996899
+      },
+      "report_path": "outputs/vision/hardhat_0006/vision_report.json"
+    },
+    {
+      "id": "hardhat_0007",
+      "title": "Public hardhat test row 7",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 3,
+      "detection_counts": {
+        "Hardhat": 2,
+        "person": 3
+      },
+      "helmet_status_counts": {
+        "present": 2,
+        "unknown": 1
+      },
+      "inference_latency_ms": {
+        "mean": 164.08080800010794,
+        "p95": 164.08080800010794
+      },
+      "report_path": "outputs/vision/hardhat_0007/vision_report.json"
+    },
+    {
+      "id": "hardhat_0008",
+      "title": "Public hardhat test row 8",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 1,
+      "detection_counts": {
+        "Hardhat": 1,
+        "person": 1
+      },
+      "helmet_status_counts": {
+        "present": 1
+      },
+      "inference_latency_ms": {
+        "mean": 200.31633700000384,
+        "p95": 200.31633700000384
+      },
+      "report_path": "outputs/vision/hardhat_0008/vision_report.json"
+    },
+    {
+      "id": "hardhat_0009",
+      "title": "Public hardhat test row 9",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 6,
+      "detection_counts": {
+        "Hardhat": 6,
+        "NO-Hardhat": 1,
+        "person": 6
+      },
+      "helmet_status_counts": {
+        "present": 5,
+        "absent": 1
+      },
+      "inference_latency_ms": {
+        "mean": 191.07646800011935,
+        "p95": 191.07646800011935
+      },
+      "report_path": "outputs/vision/hardhat_0009/vision_report.json"
+    },
+    {
+      "id": "hardhat_0010",
+      "title": "Public hardhat test row 10",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 3,
+      "detection_counts": {
+        "Hardhat": 1,
+        "person": 3
+      },
+      "helmet_status_counts": {
+        "unknown": 2,
+        "present": 1
+      },
+      "inference_latency_ms": {
+        "mean": 151.93789000022662,
+        "p95": 151.93789000022662
+      },
+      "report_path": "outputs/vision/hardhat_0010/vision_report.json"
+    },
+    {
+      "id": "hardhat_0011",
+      "title": "Public hardhat test row 11",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 2,
+      "detection_counts": {
+        "Hardhat": 2,
+        "person": 2
+      },
+      "helmet_status_counts": {
+        "present": 2
+      },
+      "inference_latency_ms": {
+        "mean": 154.1751180002393,
+        "p95": 154.1751180002393
+      },
+      "report_path": "outputs/vision/hardhat_0011/vision_report.json"
+    },
+    {
+      "id": "hardhat_0012",
+      "title": "Public hardhat test row 12",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 4,
+      "detection_counts": {
+        "Hardhat": 2,
+        "person": 4
+      },
+      "helmet_status_counts": {
+        "present": 2,
+        "unknown": 2
+      },
+      "inference_latency_ms": {
+        "mean": 181.50571999967724,
+        "p95": 181.50571999967724
+      },
+      "report_path": "outputs/vision/hardhat_0012/vision_report.json"
+    },
+    {
+      "id": "hardhat_0013",
+      "title": "Public hardhat test row 13",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 7,
+      "detection_counts": {
+        "Hardhat": 8,
+        "person": 7
+      },
+      "helmet_status_counts": {
+        "present": 6,
+        "unknown": 1
+      },
+      "inference_latency_ms": {
+        "mean": 209.20204200001535,
+        "p95": 209.20204200001535
+      },
+      "report_path": "outputs/vision/hardhat_0013/vision_report.json"
+    },
+    {
+      "id": "hardhat_0014",
+      "title": "Public hardhat test row 14",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 3,
+      "detection_counts": {
+        "Hardhat": 3,
+        "person": 3
+      },
+      "helmet_status_counts": {
+        "present": 3
+      },
+      "inference_latency_ms": {
+        "mean": 146.46410099976492,
+        "p95": 146.46410099976492
+      },
+      "report_path": "outputs/vision/hardhat_0014/vision_report.json"
+    },
+    {
+      "id": "hardhat_0015",
+      "title": "Public hardhat test row 15",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 6,
+      "detection_counts": {
+        "Hardhat": 6,
+        "person": 6
+      },
+      "helmet_status_counts": {
+        "present": 5,
+        "unknown": 1
+      },
+      "inference_latency_ms": {
+        "mean": 174.88244100013617,
+        "p95": 174.88244100013617
+      },
+      "report_path": "outputs/vision/hardhat_0015/vision_report.json"
+    },
+    {
+      "id": "hardhat_0016",
+      "title": "Public hardhat test row 16",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 4,
+      "detection_counts": {
+        "Hardhat": 4,
+        "person": 4
+      },
+      "helmet_status_counts": {
+        "present": 4
+      },
+      "inference_latency_ms": {
+        "mean": 150.78999699971973,
+        "p95": 150.78999699971973
+      },
+      "report_path": "outputs/vision/hardhat_0016/vision_report.json"
+    },
+    {
+      "id": "hardhat_0017",
+      "title": "Public hardhat test row 17",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 6,
+      "detection_counts": {
+        "Hardhat": 8,
+        "person": 6
+      },
+      "helmet_status_counts": {
+        "present": 6
+      },
+      "inference_latency_ms": {
+        "mean": 147.13911599983476,
+        "p95": 147.13911599983476
+      },
+      "report_path": "outputs/vision/hardhat_0017/vision_report.json"
+    },
+    {
+      "id": "hardhat_0018",
+      "title": "Public hardhat test row 18",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 1,
+      "detection_counts": {
+        "person": 1
+      },
+      "helmet_status_counts": {
+        "unknown": 1
+      },
+      "inference_latency_ms": {
+        "mean": 144.45282099995893,
+        "p95": 144.45282099995893
+      },
+      "report_path": "outputs/vision/hardhat_0018/vision_report.json"
+    },
+    {
+      "id": "hardhat_0019",
+      "title": "Public hardhat test row 19",
+      "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+      "domain": "construction/web dataset, not mining",
+      "person_observations": 4,
+      "detection_counts": {
+        "Hardhat": 4,
+        "person": 4
+      },
+      "helmet_status_counts": {
+        "present": 4
+      },
+      "inference_latency_ms": {
+        "mean": 147.55459200023324,
+        "p95": 147.55459200023324
+      },
+      "report_path": "outputs/vision/hardhat_0019/vision_report.json"
+    }
+  ],
+  "models": [
+    {
+      "model_id": "safetyvision-yolov8n-v1",
+      "name": "SafetyVision YOLOv8n PPE detector, original v1",
+      "author": "ayushgupta7777; architecture by Ultralytics",
+      "source": "https://huggingface.co/ayushgupta7777/safetyvision-yolov8",
+      "revision": "56a71758b55f0e9f2b4b2d6b51a779a1f882da10",
+      "download_url": "https://huggingface.co/ayushgupta7777/safetyvision-yolov8/resolve/56a71758b55f0e9f2b4b2d6b51a779a1f882da10/best.onnx",
+      "filename": "safetyvision_yolov8n.onnx",
+      "sha256": "aac7072cd9b4c1225b980ce2034887c4fb5f18eaedb7ada17525377989503762",
+      "bytes": 12180481,
+      "license": "AGPL-3.0",
+      "license_url": "https://www.gnu.org/licenses/agpl-3.0.html",
+      "format": "ONNX",
+      "input": {
+        "name": "images",
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "dtype": "float32",
+        "range": [
+          0,
+          1
+        ],
+        "colour": "RGB",
+        "resize": "letterbox"
+      },
+      "output": {
+        "name": "output0",
+        "shape": [
+          1,
+          17,
+          8400
+        ],
+        "layout": "xywh plus 13 class probabilities; class-aware NMS required"
+      },
+      "class_names": [
+        "Fall-Detected",
+        "Gloves",
+        "Goggles",
+        "Hardhat",
+        "Mask",
+        "NO-Gloves",
+        "NO-Goggles",
+        "NO-Hardhat",
+        "NO-Mask",
+        "NO-Safety Vest",
+        "No_Harness",
+        "Person",
+        "Safety Vest"
+      ],
+      "used_classes": [
+        "Hardhat",
+        "NO-Hardhat",
+        "Person"
+      ],
+      "training_provenance": "The model author describes v1 as pretrained YOLOv8n fine-tuned on the public PPE-Combined v1 Roboflow dataset. The course project does not retrain these weights.",
+      "project_accuracy": {
+        "measured": false,
+        "mAP": null,
+        "note": "Upstream benchmark metrics are not project results and are not presented as mine-domain accuracy."
+      }
+    },
+    {
+      "model_id": "yolov8n-coco-person",
+      "source": "https://huggingface.co/Kalray/yolov8",
+      "revision": "9e0af089be9c2f172e4fd9b724805f8b6514854e",
+      "download_url": "https://huggingface.co/Kalray/yolov8/resolve/9e0af089be9c2f172e4fd9b724805f8b6514854e/yolov8n.onnx",
+      "filename": "yolov8n_coco.onnx",
+      "bytes": 12834838,
+      "sha256": "65158dad735be799c2466fa15e260c09558080bd530b42a8d0c3d1b419afd8b5",
+      "license": "AGPL-3.0",
+      "license_url": "https://www.gnu.org/licenses/agpl-3.0.html",
+      "role": "COCO-pretrained general person detector, used alongside PPE detector; no project training",
+      "class_names": [
+        "person",
+        "bicycle",
+        "car",
+        "motorcycle",
+        "airplane",
+        "bus",
+        "train",
+        "truck",
+        "boat",
+        "traffic_light",
+        "fire_hydrant",
+        "stop_sign",
+        "parking_meter",
+        "bench",
+        "bird",
+        "cat",
+        "dog",
+        "horse",
+        "sheep",
+        "cow",
+        "elephant",
+        "bear",
+        "zebra",
+        "giraffe",
+        "backpack",
+        "umbrella",
+        "handbag",
+        "tie",
+        "suitcase",
+        "frisbee",
+        "skis",
+        "snowboard",
+        "sports_ball",
+        "kite",
+        "baseball_bat",
+        "baseball_glove",
+        "skateboard",
+        "surfboard",
+        "tennis_racket",
+        "bottle",
+        "wine_glass",
+        "cup",
+        "fork",
+        "knife",
+        "spoon",
+        "bowl",
+        "banana",
+        "apple",
+        "sandwich",
+        "orange",
+        "broccoli",
+        "carrot",
+        "hot_dog",
+        "pizza",
+        "donut",
+        "cake",
+        "chair",
+        "couch",
+        "potted_plant",
+        "bed",
+        "dining_table",
+        "toilet",
+        "tv",
+        "laptop",
+        "mouse",
+        "remote",
+        "keyboard",
+        "cell_phone",
+        "microwave",
+        "oven",
+        "toaster",
+        "sink",
+        "refrigerator",
+        "book",
+        "clock",
+        "vase",
+        "scissors",
+        "teddy_bear",
+        "hair_drier",
+        "toothbrush"
+      ],
+      "class_names_source": "https://raw.githubusercontent.com/kalray/kann-model-zoo/main/networks/object-detection/yolov8/onnx/classes.txt",
+      "input": {
+        "shape": [
+          1,
+          3,
+          640,
+          640
+        ],
+        "dtype": "float32",
+        "colour": "RGB",
+        "range": [
+          0,
+          1
+        ],
+        "resize": "letterbox"
+      },
+      "output": {
+        "shape": [
+          1,
+          84,
+          8400
+        ],
+        "layout": "xywh + 80 COCO class probabilities"
+      }
+    }
+  ],
+  "accuracy_measured_on_gallery": false,
+  "limitations": [
+    "Static predictions do not measure exposure duration or establish persistent incidents.",
+    "Public photo selection is an illustrative demonstration, not an accuracy benchmark.",
+    "Industrial pretrained model used without mine-specific fine-tuning.",
+    "A separate labelled-sample check, if present, is small and upstream training overlap is unknown."
+  ]
+}

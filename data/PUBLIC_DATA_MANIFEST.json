@@ -1,0 +1,64 @@
+{
+  "purpose": "Public still photographs for reproducible inference; not a training dataset or accident record.",
+  "downloaded_on": "2026-11-13",
+  "assets": [
+    {
+      "id": "oilshale_mine_01",
+      "filename": "oilshale_mine_01.jpg",
+      "title": "Underground oil shale mine, Estonia",
+      "author": "Peeter paaver",
+      "source": "https://commons.wikimedia.org/wiki/File:Oilshale_mine_01.jpg",
+      "source_revision": "https://commons.wikimedia.org/w/index.php?title=File:Oilshale_mine_01.jpg&oldid=1271178718",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Oilshale_mine_01.jpg/1280px-Oilshale_mine_01.jpg",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "sha256": "f225a5f17cb4cc4b7df391a407bb45bed0db4c526238c5701b3df586e93c58f9",
+      "bytes": 290176,
+      "domain": "underground mining",
+      "modifications": "Wikimedia 1280px thumbnail; project-generated derivative adds model-prediction boxes and labels.",
+      "ground_truth": "No object-level annotation; not used to calculate accuracy."
+    },
+    {
+      "id": "construction_workers",
+      "filename": "construction_workers.jpg",
+      "title": "Ironworkers at a construction site",
+      "author": "Paul Keleher (listed as Paul Keheler in the Commons description)",
+      "source": "https://commons.wikimedia.org/wiki/File:Construction_Workers.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Construction_Workers.jpg/960px-Construction_Workers.jpg",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "sha256": "e9fc9f42b762e404f0041e7be4255d43812218063440f8864a423605408fdb0e",
+      "bytes": 189535,
+      "domain": "construction, not mining",
+      "modifications": "Wikimedia 960px thumbnail; project-generated derivative adds model-prediction boxes and labels.",
+      "ground_truth": "No object-level annotation; not used to calculate accuracy."
+    },
+    {
+      "id": "construction_iran_02",
+      "filename": "construction_iran_02.jpg",
+      "title": "Construction silhouette under difficult lighting",
+      "author": "Mostafa Meraji / Mostafameraji",
+      "source": "https://commons.wikimedia.org/wiki/File:Construction_workers_in_Iran_02.jpg",
+      "download_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Construction_workers_in_Iran_02.jpg/1280px-Construction_workers_in_Iran_02.jpg",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sha256": "3c738f77140eea1fba6dc8bd98d24afff20bcac785d18689669e36c6028df5b2",
+      "bytes": 78039,
+      "domain": "construction, not mining",
+      "modifications": "Wikimedia 1280px thumbnail; project-generated derivative adds prediction labels if any.",
+      "ground_truth": "No object-level annotation; retained as a difficult case even if the model detects nothing."
+    }
+  ],
+  "labelled_sample": {
+    "dataset": "keremberke/hard-hat-detection",
+    "revision": "694c61350faf9a6622586d6cf50f45e1631862dc",
+    "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+    "original_source": "https://universe.roboflow.com/roboflow-universe-projects/hard-hats-fhbh5/dataset/2",
+    "author": "Roboflow Universe Projects; Hugging Face conversion by keremberke",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "selection": "Fixed first 20 rows of full/test, selected before inference.",
+    "classes": ["hardhat", "no-hardhat"],
+    "limits": "Construction/web images, not mining data. Model training overlap is unknown. Small descriptive sample check, not independent generalization evidence."
+  }
+}

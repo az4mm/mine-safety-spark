@@ -1,0 +1,803 @@
+{
+  "dataset": "keremberke/hard-hat-detection",
+  "source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+  "configuration": "full",
+  "split": "test",
+  "selection": "first 20 rows, chosen before inference; no cherry-picking",
+  "class_names": [
+    "hardhat",
+    "no-hardhat"
+  ],
+  "sample_size": 20,
+  "records": [
+    {
+      "row_index": 0,
+      "image_id": 1617,
+      "file": "test_0000.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "5d0ecad37b02c395bde5ebc4437998f2769b56153958a93195b77d2e39203513",
+      "boxes_xywh": [
+        [
+          340.0,
+          290.0,
+          299.5,
+          146.0
+        ]
+      ],
+      "categories": [
+        1
+      ]
+    },
+    {
+      "row_index": 1,
+      "image_id": 458,
+      "file": "test_0001.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "683a351c453d3794498d90c3de1742de6ec7e9843b5ef9053e8f37d80e792673",
+      "boxes_xywh": [
+        [
+          538.0,
+          374.0,
+          35.5,
+          79.0
+        ],
+        [
+          491.0,
+          265.0,
+          52.5,
+          102.0
+        ],
+        [
+          443.0,
+          322.0,
+          47.0,
+          93.5
+        ],
+        [
+          378.0,
+          256.0,
+          72.5,
+          119.0
+        ],
+        [
+          128.0,
+          0.0,
+          107.0,
+          220.0
+        ],
+        [
+          295.0,
+          132.0,
+          80.0,
+          164.5
+        ]
+      ],
+      "categories": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "row_index": 2,
+      "image_id": 1708,
+      "file": "test_0002.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "9d27d2431cc0265d6972adbcb6c8e0e27a098cb36708e8ee2379da638b48fd37",
+      "boxes_xywh": [
+        [
+          546.0,
+          350.0,
+          46.5,
+          82.0
+        ],
+        [
+          448.0,
+          279.0,
+          54.5,
+          80.0
+        ],
+        [
+          574.0,
+          295.0,
+          50.0,
+          81.0
+        ]
+      ],
+      "categories": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "row_index": 3,
+      "image_id": 160,
+      "file": "test_0003.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "3b3c836f4fcc56a841dc84a716f6c52d64b9bdb3724f59cc57ff8940a9520ee3",
+      "boxes_xywh": [
+        [
+          165.0,
+          72.0,
+          57.0,
+          63.0
+        ]
+      ],
+      "categories": [
+        0
+      ]
+    },
+    {
+      "row_index": 4,
+      "image_id": 258,
+      "file": "test_0004.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "175e7544b246f88cce41b8c5437c8dbb709485189e4ee69a0c52d80dc595a61c",
+      "boxes_xywh": [
+        [
+          336.0,
+          161.0,
+          37.0,
+          48.0
+        ],
+        [
+          416.0,
+          183.0,
+          34.0,
+          29.5
+        ]
+      ],
+      "categories": [
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 5,
+      "image_id": 449,
+      "file": "test_0005.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "9ee524bc5f0c9bedd491c272c0412582d22f58cee51f7532fbb665de11a89e81",
+      "boxes_xywh": [
+        [
+          76.0,
+          221.0,
+          42.0,
+          80.5
+        ],
+        [
+          123.0,
+          227.0,
+          32.0,
+          61.5
+        ],
+        [
+          223.0,
+          252.0,
+          28.0,
+          40.5
+        ],
+        [
+          378.0,
+          215.0,
+          46.0,
+          54.0
+        ],
+        [
+          435.0,
+          225.0,
+          41.0,
+          67.5
+        ],
+        [
+          560.0,
+          191.0,
+          55.0,
+          73.0
+        ],
+        [
+          543.0,
+          202.0,
+          28.0,
+          61.5
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 6,
+      "image_id": 515,
+      "file": "test_0006.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "91cd0676db6d6d6715191d605267d1f2814907df531f6f32d3c30b527e4971bf",
+      "boxes_xywh": [
+        [
+          188.0,
+          13.0,
+          81.0,
+          76.5
+        ]
+      ],
+      "categories": [
+        0
+      ]
+    },
+    {
+      "row_index": 7,
+      "image_id": 1981,
+      "file": "test_0007.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "0bf0cd1a695ef788b2d2117748c98a566076725bee286d4649087eb287cb03f0",
+      "boxes_xywh": [
+        [
+          401.0,
+          123.0,
+          43.5,
+          40.5
+        ],
+        [
+          291.0,
+          176.0,
+          36.0,
+          31.0
+        ]
+      ],
+      "categories": [
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 8,
+      "image_id": 309,
+      "file": "test_0008.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "3491fb672ba8ece0197a7f897751042a4851691aeec7d42d29e9d5f431be8c1c",
+      "boxes_xywh": [
+        [
+          171.0,
+          103.0,
+          66.0,
+          63.0
+        ]
+      ],
+      "categories": [
+        0
+      ]
+    },
+    {
+      "row_index": 9,
+      "image_id": 1294,
+      "file": "test_0009.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "3e6e6a3d27b01944eae6ef5a009804ddee770f6dc2d467b9ceeb29db46e7bf33",
+      "boxes_xywh": [
+        [
+          474.0,
+          236.0,
+          39.5,
+          66.5
+        ],
+        [
+          228.0,
+          246.0,
+          36.0,
+          65.0
+        ],
+        [
+          117.0,
+          229.0,
+          41.0,
+          63.0
+        ],
+        [
+          335.0,
+          263.0,
+          39.5,
+          68.5
+        ],
+        [
+          187.0,
+          230.0,
+          38.5,
+          61.5
+        ],
+        [
+          374.0,
+          254.0,
+          30.5,
+          56.5
+        ],
+        [
+          280.0,
+          236.0,
+          29.5,
+          54.5
+        ],
+        [
+          455.0,
+          267.0,
+          28.0,
+          58.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "row_index": 10,
+      "image_id": 878,
+      "file": "test_0010.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "1d046e00855b4fda8b0ce9ece6cd306a65daf313a3026815525d915bc1f0ba4f",
+      "boxes_xywh": [
+        [
+          383.0,
+          306.0,
+          71.0,
+          63.0
+        ],
+        [
+          241.0,
+          361.0,
+          74.0,
+          52.5
+        ]
+      ],
+      "categories": [
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 11,
+      "image_id": 94,
+      "file": "test_0011.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "6756b0ec4bdf73f4ce3f61deb4b4e157d0e42c7343774bc15fae1b13cd35018c",
+      "boxes_xywh": [
+        [
+          166.0,
+          122.0,
+          97.5,
+          149.5
+        ],
+        [
+          521.0,
+          2.0,
+          119.0,
+          151.0
+        ]
+      ],
+      "categories": [
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 12,
+      "image_id": 1974,
+      "file": "test_0012.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "263b58673689965c9181388af9c23c9bf967140b622a98d777bddf55fba2044b",
+      "boxes_xywh": [
+        [
+          125.0,
+          159.0,
+          67.5,
+          63.0
+        ],
+        [
+          289.0,
+          231.0,
+          84.5,
+          85.0
+        ]
+      ],
+      "categories": [
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 13,
+      "image_id": 1814,
+      "file": "test_0013.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "d72aaa819d2c7db605fdb82cb97c61d816ab2d386a165304470473fa35570c75",
+      "boxes_xywh": [
+        [
+          68.0,
+          229.0,
+          81.5,
+          71.0
+        ],
+        [
+          260.0,
+          249.0,
+          49.0,
+          44.5
+        ],
+        [
+          437.0,
+          263.0,
+          41.5,
+          38.5
+        ],
+        [
+          345.0,
+          269.0,
+          35.5,
+          35.5
+        ],
+        [
+          159.0,
+          255.0,
+          67.5,
+          67.5
+        ],
+        [
+          486.0,
+          279.0,
+          32.5,
+          29.0
+        ],
+        [
+          317.0,
+          286.0,
+          27.5,
+          31.0
+        ],
+        [
+          215.0,
+          290.0,
+          32.5,
+          26.0
+        ],
+        [
+          291.0,
+          293.0,
+          26.0,
+          29.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 14,
+      "image_id": 836,
+      "file": "test_0014.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "cdadd7332dd82daf352f1df5c5d2fffe656785431900255a8aa0a350c56dbccd",
+      "boxes_xywh": [
+        [
+          411.0,
+          186.0,
+          46.0,
+          44.5
+        ],
+        [
+          229.0,
+          286.0,
+          60.0,
+          51.0
+        ],
+        [
+          128.0,
+          314.0,
+          75.5,
+          51.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 15,
+      "image_id": 1498,
+      "file": "test_0015.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "7964c08dae4171732dc51b0432424ba6d5609eda871f5cf170d625799cff5103",
+      "boxes_xywh": [
+        [
+          345.0,
+          215.0,
+          47.5,
+          31.0
+        ],
+        [
+          217.0,
+          219.0,
+          35.5,
+          35.5
+        ],
+        [
+          208.0,
+          228.0,
+          18.5,
+          18.5
+        ],
+        [
+          179.0,
+          233.0,
+          27.5,
+          18.5
+        ],
+        [
+          297.0,
+          241.0,
+          32.5,
+          23.0
+        ],
+        [
+          279.0,
+          248.0,
+          44.5,
+          28.0
+        ],
+        [
+          459.0,
+          252.0,
+          23.0,
+          31.0
+        ],
+        [
+          403.0,
+          251.0,
+          64.5,
+          44.5
+        ],
+        [
+          497.0,
+          249.0,
+          83.0,
+          57.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 16,
+      "image_id": 1155,
+      "file": "test_0016.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "b75aaaa8d61f19d4ef3dce2ad304532995762896184bc9f2e74622c915d57a71",
+      "boxes_xywh": [
+        [
+          108.0,
+          383.0,
+          18.5,
+          17.0
+        ],
+        [
+          440.0,
+          382.0,
+          27.5,
+          18.5
+        ],
+        [
+          410.0,
+          383.0,
+          23.0,
+          20.0
+        ],
+        [
+          328.0,
+          383.0,
+          27.5,
+          28.0
+        ],
+        [
+          474.0,
+          400.0,
+          21.5,
+          20.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 17,
+      "image_id": 1089,
+      "file": "test_0017.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "9dfca02b1d011df856afd5fa73d310f8bd474465050c19786a5a76af76bd7d93",
+      "boxes_xywh": [
+        [
+          59.0,
+          227.0,
+          60.0,
+          46.5
+        ],
+        [
+          110.0,
+          232.0,
+          69.0,
+          51.0
+        ],
+        [
+          191.0,
+          246.0,
+          60.0,
+          43.0
+        ],
+        [
+          429.0,
+          248.0,
+          60.0,
+          51.0
+        ],
+        [
+          308.0,
+          252.0,
+          54.0,
+          51.0
+        ],
+        [
+          512.0,
+          247.0,
+          78.5,
+          63.0
+        ],
+        [
+          366.0,
+          262.0,
+          75.5,
+          49.5
+        ],
+        [
+          239.0,
+          276.0,
+          71.0,
+          57.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "row_index": 18,
+      "image_id": 188,
+      "file": "test_0018.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "c90beb0730b59747527e9571d4085f404353a7e4c9380e814856dfeda105d862",
+      "boxes_xywh": [
+        [
+          177.0,
+          252.0,
+          287.0,
+          196.5
+        ]
+      ],
+      "categories": [
+        1
+      ]
+    },
+    {
+      "row_index": 19,
+      "image_id": 1907,
+      "file": "test_0019.jpg",
+      "width": 640,
+      "height": 640,
+      "sha256": "f60e5698e8f3b1bea9bc6c4fff0cbc2032047533cf9d92728b12ba2ce1403250",
+      "boxes_xywh": [
+        [
+          60.0,
+          145.0,
+          83.0,
+          84.5
+        ],
+        [
+          0.0,
+          158.0,
+          98.0,
+          98.0
+        ],
+        [
+          329.0,
+          190.0,
+          75.5,
+          63.0
+        ],
+        [
+          417.0,
+          179.0,
+          104.5,
+          109.0
+        ]
+      ],
+      "categories": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": "Construction/web images, not mining data. Model training overlap is unknown. Small descriptive sample check, not independent generalization evidence.",
+  "revision": "694c61350faf9a6622586d6cf50f45e1631862dc",
+  "original_source": "https://universe.roboflow.com/roboflow-universe-projects/hard-hats-fhbh5/dataset/2",
+  "author": "Roboflow Universe Projects; Hugging Face conversion by keremberke",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "classes": [
+    "hardhat",
+    "no-hardhat"
+  ]
+}

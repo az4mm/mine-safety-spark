@@ -1,0 +1,107 @@
+{
+  "source_type": "synthetic",
+  "description": "Deterministic camera observations, not video model predictions. All intervals are seconds [start,end).",
+  "seconds": 120,
+  "scenarios": [
+    {
+      "camera_id": "CAM-01",
+      "track_id": "P01",
+      "absent": [
+        [
+          20,
+          40
+        ]
+      ],
+      "unknown": [],
+      "zone": []
+    },
+    {
+      "camera_id": "CAM-01",
+      "track_id": "P02",
+      "absent": [],
+      "unknown": [
+        [
+          40,
+          65
+        ]
+      ],
+      "zone": []
+    },
+    {
+      "camera_id": "CAM-02",
+      "track_id": "P01",
+      "absent": [
+        [
+          75,
+          90
+        ]
+      ],
+      "unknown": [],
+      "zone": [
+        [
+          15,
+          35
+        ],
+        [
+          70,
+          95
+        ]
+      ]
+    },
+    {
+      "camera_id": "CAM-02",
+      "track_id": "P02",
+      "absent": [
+        [
+          0,
+          12
+        ],
+        [
+          100,
+          115
+        ]
+      ],
+      "unknown": [],
+      "zone": []
+    },
+    {
+      "camera_id": "CAM-03",
+      "track_id": "P01",
+      "absent": [],
+      "unknown": [
+        [
+          0,
+          20
+        ]
+      ],
+      "zone": [
+        [
+          60,
+          80
+        ]
+      ]
+    },
+    {
+      "camera_id": "CAM-03",
+      "track_id": "P02",
+      "absent": [
+        [
+          45,
+          65
+        ]
+      ],
+      "unknown": [
+        [
+          65,
+          75
+        ]
+      ],
+      "zone": [
+        [
+          48,
+          58
+        ]
+      ]
+    }
+  ]
+}

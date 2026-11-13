@@ -1,0 +1,41 @@
+[
+  {
+    "path": "outputs/vision/oilshale_mine_01/oilshale_mine_01_frame_000000.jpg",
+    "title": "Underground oil shale mine, Estonia",
+    "kind": "image",
+    "source_type": "public_image",
+    "description": "Actual ONNX inference on a public photograph. underground mining. Model predictions, not verified incidents.",
+    "url": "/assets/outputs/vision/oilshale_mine_01/oilshale_mine_01_frame_000000.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Oilshale_mine_01.jpg",
+    "author": "Peeter paaver",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "domain": "underground mining"
+  },
+  {
+    "path": "outputs/vision/construction_workers/construction_workers_frame_000000.jpg",
+    "title": "Ironworkers at a construction site",
+    "kind": "image",
+    "source_type": "public_image",
+    "description": "Actual ONNX inference on a public photograph. construction, not mining. Model predictions, not verified incidents.",
+    "url": "/assets/outputs/vision/construction_workers/construction_workers_frame_000000.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Construction_Workers.jpg",
+    "author": "Paul Keleher (listed as Paul Keheler in the Commons description)",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "domain": "construction, not mining"
+  },
+  {
+    "path": "outputs/vision/construction_iran_02/construction_iran_02_frame_000000.jpg",
+    "title": "Construction silhouette under difficult lighting",
+    "kind": "image",
+    "source_type": "public_image",
+    "description": "Actual ONNX inference on a public photograph. construction, not mining. Model predictions, not verified incidents.",
+    "url": "/assets/outputs/vision/construction_iran_02/construction_iran_02_frame_000000.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Construction_workers_in_Iran_02.jpg",
+    "author": "Mostafa Meraji / Mostafameraji",
+    "license": "CC0 1.0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "domain": "construction, not mining"
+  }
+]

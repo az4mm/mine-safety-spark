@@ -1,0 +1,22 @@
+{
+  "engine": "Apache Spark",
+  "spark_version": "4.0.1",
+  "master": "local[2]",
+  "execution_mode": "local threads",
+  "mode": "batch",
+  "runtime_seconds": 15.429,
+  "input_rows": 73,
+  "valid_rows": 73,
+  "invalid_rows": 0,
+  "unique_observations": 73,
+  "duplicate_rows": 0,
+  "source_type_counts": {
+    "public_image": 73
+  },
+  "last_updated": "2026-11-13T17:18:31Z",
+  "incident_display_limit": 500,
+  "observation_display_limit": 500,
+  "snapshot_semantics": "all retained observations; one row per event_id",
+  "risk_semantics": "configured rule severity, not an accident probability",
+  "publication_note": "Runtime identities, connection addresses and absolute local paths are omitted; numerical measurements and test outcomes are unchanged."
+}

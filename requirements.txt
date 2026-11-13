@@ -1,0 +1,4 @@
+# Runtime dependencies are defined once in pyproject.toml, including the pinned
+# Spark, OpenCV and ONNX Runtime versions. Run from the project directory:
+#   python -m pip install -r requirements.txt
+-e .

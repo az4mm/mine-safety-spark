@@ -1,0 +1,1748 @@
+{
+  "evaluation_type": "fixed_public_sample_smoke_check",
+  "dataset": "keremberke/hard-hat-detection",
+  "dataset_source": "https://huggingface.co/datasets/keremberke/hard-hat-detection",
+  "selection": "first 20 rows, chosen before inference; no cherry-picking",
+  "images_evaluated": 20,
+  "model_sha256": "aac7072cd9b4c1225b980ce2034887c4fb5f18eaedb7ada17525377989503762",
+  "confidence_threshold": 0.35,
+  "iou_threshold": 0.5,
+  "per_class": {
+    "hardhat": {
+      "tp": 44,
+      "fp": 11,
+      "fn": 21,
+      "precision": 0.8,
+      "recall": 0.676923076923077,
+      "f1": 0.7333333333333333
+    },
+    "no-hardhat": {
+      "tp": 3,
+      "fp": 5,
+      "fn": 9,
+      "precision": 0.375,
+      "recall": 0.25,
+      "f1": 0.3
+    }
+  },
+  "micro": {
+    "tp": 47,
+    "fp": 16,
+    "fn": 30,
+    "precision": 0.746031746031746,
+    "recall": 0.6103896103896104,
+    "f1": 0.6714285714285714
+  },
+  "mAP": null,
+  "scope": "Raw helmet/bare-head object localization only; not person association, incident detection, or mine-domain accuracy.",
+  "limitations": [
+    "Only the first 20 test rows were chosen before inference; this is a small convenience sample.",
+    "Overlap with the pretrained model's upstream training images is unknown; it is not a verified independent holdout.",
+    "Source images are construction/web data, not a mine-specific evaluation set.",
+    "Precision and recall are computed at the declared threshold; no mAP is claimed."
+  ],
+  "per_image": [
+    {
+      "file": "test_0000.jpg",
+      "row_index": 0,
+      "counts": {
+        "no-hardhat": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "predictions": [],
+      "ground_truth": [
+        {
+          "box": [
+            340.0,
+            290.0,
+            639.5,
+            436.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0001.jpg",
+      "row_index": 1,
+      "counts": {
+        "no-hardhat": {
+          "tp": 0,
+          "fp": 3,
+          "fn": 6
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            146.3,
+            0.0,
+            223.94,
+            61.72
+          ],
+          "confidence": 0.5377,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            494.75,
+            272.24,
+            539.25,
+            313.28
+          ],
+          "confidence": 0.479903,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            541.27,
+            378.79,
+            569.53,
+            405.01
+          ],
+          "confidence": 0.391386,
+          "label": "no-hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            538.0,
+            374.0,
+            573.5,
+            453.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            491.0,
+            265.0,
+            543.5,
+            367.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            443.0,
+            322.0,
+            490.0,
+            415.5
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            378.0,
+            256.0,
+            450.5,
+            375.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            128.0,
+            0.0,
+            235.0,
+            220.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            295.0,
+            132.0,
+            375.0,
+            296.5
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0002.jpg",
+      "row_index": 2,
+      "counts": {
+        "no-hardhat": {
+          "tp": 3,
+          "fp": 1,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            494.29,
+            463.46,
+            558.59,
+            599.17
+          ],
+          "confidence": 0.714161,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            543.8,
+            353.93,
+            587.98,
+            451.14
+          ],
+          "confidence": 0.713,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            575.3,
+            290.4,
+            619.35,
+            386.33
+          ],
+          "confidence": 0.609471,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            445.52,
+            276.61,
+            500.02,
+            342.5
+          ],
+          "confidence": 0.453657,
+          "label": "no-hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            546.0,
+            350.0,
+            592.5,
+            432.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            448.0,
+            279.0,
+            502.5,
+            359.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            574.0,
+            295.0,
+            624.0,
+            376.0
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0003.jpg",
+      "row_index": 3,
+      "counts": {
+        "hardhat": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            167.41,
+            73.97,
+            223.88,
+            131.85
+          ],
+          "confidence": 0.704475,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            165.0,
+            72.0,
+            222.0,
+            135.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0004.jpg",
+      "row_index": 4,
+      "counts": {
+        "hardhat": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 2
+        }
+      },
+      "predictions": [],
+      "ground_truth": [
+        {
+          "box": [
+            336.0,
+            161.0,
+            373.0,
+            209.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            416.0,
+            183.0,
+            450.0,
+            212.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0005.jpg",
+      "row_index": 5,
+      "counts": {
+        "hardhat": {
+          "tp": 3,
+          "fp": 3,
+          "fn": 4
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            74.52,
+            225.44,
+            113.33,
+            262.88
+          ],
+          "confidence": 0.689215,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            226.86,
+            256.81,
+            248.93,
+            278.0
+          ],
+          "confidence": 0.622182,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            123.05,
+            232.38,
+            151.67,
+            257.4
+          ],
+          "confidence": 0.6218,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            553.87,
+            194.32,
+            613.06,
+            248.85
+          ],
+          "confidence": 0.494999,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            382.08,
+            214.91,
+            418.99,
+            264.06
+          ],
+          "confidence": 0.494779,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            437.29,
+            228.85,
+            474.99,
+            268.36
+          ],
+          "confidence": 0.399518,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            76.0,
+            221.0,
+            118.0,
+            301.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            123.0,
+            227.0,
+            155.0,
+            288.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            223.0,
+            252.0,
+            251.0,
+            292.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            378.0,
+            215.0,
+            424.0,
+            269.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            435.0,
+            225.0,
+            476.0,
+            292.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            560.0,
+            191.0,
+            615.0,
+            264.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            543.0,
+            202.0,
+            571.0,
+            263.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0006.jpg",
+      "row_index": 6,
+      "counts": {
+        "hardhat": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            186.26,
+            14.72,
+            266.59,
+            92.58
+          ],
+          "confidence": 0.799776,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            188.0,
+            13.0,
+            269.0,
+            89.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0007.jpg",
+      "row_index": 7,
+      "counts": {
+        "hardhat": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            408.87,
+            122.69,
+            439.87,
+            153.65
+          ],
+          "confidence": 0.732859,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            297.1,
+            176.15,
+            321.77,
+            200.51
+          ],
+          "confidence": 0.692983,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            401.0,
+            123.0,
+            444.5,
+            163.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            291.0,
+            176.0,
+            327.0,
+            207.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0008.jpg",
+      "row_index": 8,
+      "counts": {
+        "hardhat": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            175.68,
+            103.68,
+            231.13,
+            156.21
+          ],
+          "confidence": 0.573322,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            171.0,
+            103.0,
+            237.0,
+            166.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0009.jpg",
+      "row_index": 9,
+      "counts": {
+        "hardhat": {
+          "tp": 1,
+          "fp": 5,
+          "fn": 6
+        },
+        "no-hardhat": {
+          "tp": 0,
+          "fp": 1,
+          "fn": 1
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            336.17,
+            264.26,
+            376.47,
+            298.93
+          ],
+          "confidence": 0.753987,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            185.91,
+            231.79,
+            225.16,
+            266.37
+          ],
+          "confidence": 0.752545,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            224.21,
+            245.93,
+            263.37,
+            277.06
+          ],
+          "confidence": 0.729737,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            116.06,
+            229.96,
+            155.54,
+            261.05
+          ],
+          "confidence": 0.715455,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            473.96,
+            236.43,
+            514.71,
+            266.46
+          ],
+          "confidence": 0.674513,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            373.72,
+            256.52,
+            404.11,
+            283.34
+          ],
+          "confidence": 0.669972,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            281.73,
+            238.3,
+            309.29,
+            262.41
+          ],
+          "confidence": 0.466421,
+          "label": "no-hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            474.0,
+            236.0,
+            513.5,
+            302.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            228.0,
+            246.0,
+            264.0,
+            311.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            117.0,
+            229.0,
+            158.0,
+            292.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            335.0,
+            263.0,
+            374.5,
+            331.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            187.0,
+            230.0,
+            225.5,
+            291.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            374.0,
+            254.0,
+            404.5,
+            310.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            280.0,
+            236.0,
+            309.5,
+            290.5
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        },
+        {
+          "box": [
+            455.0,
+            267.0,
+            483.0,
+            325.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0010.jpg",
+      "row_index": 10,
+      "counts": {
+        "hardhat": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            394.7,
+            312.65,
+            442.28,
+            361.92
+          ],
+          "confidence": 0.633997,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            383.0,
+            306.0,
+            454.0,
+            369.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            241.0,
+            361.0,
+            315.0,
+            413.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0011.jpg",
+      "row_index": 11,
+      "counts": {
+        "hardhat": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            164.18,
+            125.39,
+            269.1,
+            210.68
+          ],
+          "confidence": 0.766894,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            526.02,
+            0.03,
+            639.8,
+            120.42
+          ],
+          "confidence": 0.528041,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            166.0,
+            122.0,
+            263.5,
+            271.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            521.0,
+            2.0,
+            640.0,
+            153.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0012.jpg",
+      "row_index": 12,
+      "counts": {
+        "hardhat": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            288.04,
+            231.85,
+            372.02,
+            320.62
+          ],
+          "confidence": 0.7399,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            127.66,
+            164.34,
+            193.57,
+            222.61
+          ],
+          "confidence": 0.734475,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            125.0,
+            159.0,
+            192.5,
+            222.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            289.0,
+            231.0,
+            373.5,
+            316.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0013.jpg",
+      "row_index": 13,
+      "counts": {
+        "hardhat": {
+          "tp": 5,
+          "fp": 3,
+          "fn": 4
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            70.85,
+            235.06,
+            149.15,
+            284.95
+          ],
+          "confidence": 0.743921,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            163.06,
+            264.38,
+            222.1,
+            318.29
+          ],
+          "confidence": 0.730431,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            438.13,
+            270.16,
+            471.1,
+            294.28
+          ],
+          "confidence": 0.696472,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            265.8,
+            255.83,
+            312.74,
+            282.46
+          ],
+          "confidence": 0.656481,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            348.48,
+            276.05,
+            376.96,
+            294.49
+          ],
+          "confidence": 0.603091,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            218.47,
+            288.3,
+            245.14,
+            308.62
+          ],
+          "confidence": 0.520907,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            488.88,
+            279.77,
+            518.62,
+            297.68
+          ],
+          "confidence": 0.499353,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            319.56,
+            290.0,
+            343.23,
+            307.46
+          ],
+          "confidence": 0.365997,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            68.0,
+            229.0,
+            149.5,
+            300.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            260.0,
+            249.0,
+            309.0,
+            293.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            437.0,
+            263.0,
+            478.5,
+            301.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            345.0,
+            269.0,
+            380.5,
+            304.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            159.0,
+            255.0,
+            226.5,
+            322.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            486.0,
+            279.0,
+            518.5,
+            308.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            317.0,
+            286.0,
+            344.5,
+            317.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            215.0,
+            290.0,
+            247.5,
+            316.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            291.0,
+            293.0,
+            317.0,
+            322.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0014.jpg",
+      "row_index": 14,
+      "counts": {
+        "hardhat": {
+          "tp": 3,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            234.42,
+            288.6,
+            278.36,
+            335.11
+          ],
+          "confidence": 0.59793,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            410.52,
+            194.27,
+            453.22,
+            233.36
+          ],
+          "confidence": 0.572047,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            132.74,
+            317.49,
+            197.65,
+            380.06
+          ],
+          "confidence": 0.374293,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            411.0,
+            186.0,
+            457.0,
+            230.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            229.0,
+            286.0,
+            289.0,
+            337.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            128.0,
+            314.0,
+            203.5,
+            365.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0015.jpg",
+      "row_index": 15,
+      "counts": {
+        "hardhat": {
+          "tp": 6,
+          "fp": 0,
+          "fn": 3
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            496.97,
+            248.7,
+            579.32,
+            298.43
+          ],
+          "confidence": 0.681244,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            403.77,
+            251.44,
+            462.13,
+            295.92
+          ],
+          "confidence": 0.669617,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            343.02,
+            215.71,
+            396.32,
+            250.9
+          ],
+          "confidence": 0.605456,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            283.03,
+            241.01,
+            327.54,
+            271.75
+          ],
+          "confidence": 0.552722,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            456.46,
+            254.76,
+            480.34,
+            277.04
+          ],
+          "confidence": 0.457928,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            212.87,
+            220.15,
+            253.07,
+            250.99
+          ],
+          "confidence": 0.450355,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            345.0,
+            215.0,
+            392.5,
+            246.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            217.0,
+            219.0,
+            252.5,
+            254.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            208.0,
+            228.0,
+            226.5,
+            246.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            179.0,
+            233.0,
+            206.5,
+            251.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            297.0,
+            241.0,
+            329.5,
+            264.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            279.0,
+            248.0,
+            323.5,
+            276.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            459.0,
+            252.0,
+            482.0,
+            283.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            403.0,
+            251.0,
+            467.5,
+            295.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            497.0,
+            249.0,
+            580.0,
+            306.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0016.jpg",
+      "row_index": 16,
+      "counts": {
+        "hardhat": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            443.98,
+            382.36,
+            464.59,
+            400.46
+          ],
+          "confidence": 0.621902,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            327.48,
+            388.46,
+            349.0,
+            408.67
+          ],
+          "confidence": 0.583876,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            476.3,
+            398.08,
+            498.22,
+            420.43
+          ],
+          "confidence": 0.533575,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            106.32,
+            384.32,
+            123.25,
+            398.16
+          ],
+          "confidence": 0.472778,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            108.0,
+            383.0,
+            126.5,
+            400.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            440.0,
+            382.0,
+            467.5,
+            400.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            410.0,
+            383.0,
+            433.0,
+            403.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            328.0,
+            383.0,
+            355.5,
+            411.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            474.0,
+            400.0,
+            495.5,
+            420.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0017.jpg",
+      "row_index": 17,
+      "counts": {
+        "hardhat": {
+          "tp": 8,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            196.16,
+            244.88,
+            251.52,
+            318.44
+          ],
+          "confidence": 0.836034,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            112.99,
+            233.85,
+            178.31,
+            319.25
+          ],
+          "confidence": 0.833033,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            247.63,
+            284.45,
+            309.91,
+            360.59
+          ],
+          "confidence": 0.8248,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            370.17,
+            259.98,
+            429.39,
+            342.44
+          ],
+          "confidence": 0.818569,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            60.84,
+            226.62,
+            117.32,
+            302.99
+          ],
+          "confidence": 0.796591,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            308.18,
+            255.88,
+            359.59,
+            328.2
+          ],
+          "confidence": 0.790011,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            431.85,
+            256.1,
+            485.87,
+            323.74
+          ],
+          "confidence": 0.768216,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            513.11,
+            256.12,
+            580.14,
+            333.34
+          ],
+          "confidence": 0.659312,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            59.0,
+            227.0,
+            119.0,
+            273.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            110.0,
+            232.0,
+            179.0,
+            283.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            191.0,
+            246.0,
+            251.0,
+            289.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            429.0,
+            248.0,
+            489.0,
+            299.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            308.0,
+            252.0,
+            362.0,
+            303.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            512.0,
+            247.0,
+            590.5,
+            310.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            366.0,
+            262.0,
+            441.5,
+            311.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            239.0,
+            276.0,
+            310.0,
+            333.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0018.jpg",
+      "row_index": 18,
+      "counts": {
+        "no-hardhat": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 1
+        }
+      },
+      "predictions": [],
+      "ground_truth": [
+        {
+          "box": [
+            177.0,
+            252.0,
+            464.0,
+            448.5
+          ],
+          "confidence": 1.0,
+          "label": "no-hardhat"
+        }
+      ]
+    },
+    {
+      "file": "test_0019.jpg",
+      "row_index": 19,
+      "counts": {
+        "hardhat": {
+          "tp": 4,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "predictions": [
+        {
+          "box": [
+            0.0,
+            170.56,
+            95.58,
+            242.09
+          ],
+          "confidence": 0.685087,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            423.62,
+            202.59,
+            522.51,
+            275.5
+          ],
+          "confidence": 0.58873,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            68.57,
+            165.8,
+            136.96,
+            219.57
+          ],
+          "confidence": 0.424744,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            333.23,
+            194.13,
+            401.09,
+            276.84
+          ],
+          "confidence": 0.390877,
+          "label": "hardhat"
+        }
+      ],
+      "ground_truth": [
+        {
+          "box": [
+            60.0,
+            145.0,
+            143.0,
+            229.5
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            0.0,
+            158.0,
+            98.0,
+            256.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            329.0,
+            190.0,
+            404.5,
+            253.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        },
+        {
+          "box": [
+            417.0,
+            179.0,
+            521.5,
+            288.0
+          ],
+          "confidence": 1.0,
+          "label": "hardhat"
+        }
+      ]
+    }
+  ]
+}

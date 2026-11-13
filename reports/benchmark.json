@@ -1,0 +1,189 @@
+{
+  "measured_at": "2026-11-13T17:07:09.914575+00:00",
+  "kind": "measured Apache Spark analytics benchmark",
+  "data_provenance": "deterministically generated synthetic observations; no accuracy claims",
+  "topology_note": "local[N] is N threads on one host; standalone workers on the same host share physical resources",
+  "results": [
+    {
+      "master": "local[1]",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 10000,
+      "output_groups": 168,
+      "aggregated_observations": 10000,
+      "repeats": 3,
+      "startup_seconds": 4.8216,
+      "prepare_seconds": 3.3905,
+      "warmup_seconds": 1.9228,
+      "run_seconds": [
+        0.4755,
+        0.444,
+        0.446
+      ],
+      "median_seconds": 0.446,
+      "rows_per_second": 22423.8,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    },
+    {
+      "master": "local[1]",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 100000,
+      "output_groups": 1668,
+      "aggregated_observations": 100000,
+      "repeats": 3,
+      "startup_seconds": 4.2278,
+      "prepare_seconds": 3.2205,
+      "warmup_seconds": 1.8979,
+      "run_seconds": [
+        0.6177,
+        0.6275,
+        0.4019
+      ],
+      "median_seconds": 0.6177,
+      "rows_per_second": 161879.3,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    },
+    {
+      "master": "local[1]",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 1000000,
+      "output_groups": 16668,
+      "aggregated_observations": 1000000,
+      "repeats": 3,
+      "startup_seconds": 4.234,
+      "prepare_seconds": 4.4327,
+      "warmup_seconds": 2.6986,
+      "run_seconds": [
+        1.1167,
+        1.0008,
+        0.8983
+      ],
+      "median_seconds": 1.0008,
+      "rows_per_second": 999151.4,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    },
+    {
+      "master": "local[2]",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 10000,
+      "output_groups": 168,
+      "aggregated_observations": 10000,
+      "repeats": 3,
+      "startup_seconds": 4.0696,
+      "prepare_seconds": 3.0331,
+      "warmup_seconds": 1.8191,
+      "run_seconds": [
+        0.4993,
+        0.4428,
+        0.464
+      ],
+      "median_seconds": 0.464,
+      "rows_per_second": 21551.8,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    },
+    {
+      "master": "local[2]",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 100000,
+      "output_groups": 1668,
+      "aggregated_observations": 100000,
+      "repeats": 3,
+      "startup_seconds": 3.8575,
+      "prepare_seconds": 3.2256,
+      "warmup_seconds": 1.9183,
+      "run_seconds": [
+        0.5337,
+        0.4429,
+        0.3878
+      ],
+      "median_seconds": 0.4429,
+      "rows_per_second": 225772.3,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    },
+    {
+      "master": "local[2]",
+      "spark_version": "4.0.1",
+      "source_type": "synthetic",
+      "input_rows": 1000000,
+      "output_groups": 16668,
+      "aggregated_observations": 1000000,
+      "repeats": 3,
+      "startup_seconds": 4.2269,
+      "prepare_seconds": 3.9285,
+      "warmup_seconds": 2.0909,
+      "run_seconds": [
+        0.9686,
+        0.7343,
+        0.6009
+      ],
+      "median_seconds": 0.7343,
+      "rows_per_second": 1361825.8,
+      "logical_cpus": 9,
+      "python_version": "3.12.14",
+      "input_partitions": 8,
+      "benchmark_scope": "cached synthetic records; SQL broadcast join and one-minute window aggregates; includes result collection",
+      "excludes": [
+        "model inference",
+        "video decoding",
+        "input transport",
+        "Spark startup",
+        "input generation"
+      ]
+    }
+  ],
+  "publication_note": "Runtime identities, connection addresses and absolute local paths are omitted; numerical measurements and test outcomes are unchanged."
+}

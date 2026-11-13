@@ -1,0 +1,54 @@
+{
+  "kind": "Sanitized Apache Spark standalone status snapshot",
+  "snapshot_stage": "before the recorded analytics and benchmark runs",
+  "topology_note": "The documented demonstration uses two worker processes on one physical host; this is not evidence of multi-machine speedup.",
+  "publication_note": "Worker and application identifiers, network addresses, ports, runtime user and heartbeat/start timestamps are omitted. Recorded resource counts, states and application durations are unchanged.",
+  "units": {
+    "memory_fields": "MiB",
+    "application_duration": "milliseconds"
+  },
+  "workers": [
+    {
+      "cores": 1,
+      "coresused": 0,
+      "coresfree": 1,
+      "memory": 1024,
+      "memoryused": 0,
+      "memoryfree": 1024,
+      "resources": {},
+      "resourcesused": {},
+      "resourcesfree": {},
+      "state": "ALIVE"
+    },
+    {
+      "cores": 1,
+      "coresused": 0,
+      "coresfree": 1,
+      "memory": 1024,
+      "memoryused": 0,
+      "memoryfree": 1024,
+      "resources": {},
+      "resourcesused": {},
+      "resourcesfree": {},
+      "state": "ALIVE"
+    }
+  ],
+  "aliveworkers": 2,
+  "cores": 2,
+  "coresused": 0,
+  "memory": 2048,
+  "memoryused": 0,
+  "resources": [
+    {},
+    {}
+  ],
+  "resourcesused": [
+    {},
+    {}
+  ],
+  "activeapps": [],
+  "completedapps": [],
+  "activedrivers": [],
+  "completeddrivers": [],
+  "status": "ALIVE"
+}

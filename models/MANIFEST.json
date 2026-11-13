@@ -1,0 +1,20 @@
+{
+  "model_id": "safetyvision-yolov8n-v1",
+  "name": "SafetyVision YOLOv8n PPE detector, original v1",
+  "author": "ayushgupta7777; architecture by Ultralytics",
+  "source": "https://huggingface.co/ayushgupta7777/safetyvision-yolov8",
+  "revision": "56a71758b55f0e9f2b4b2d6b51a779a1f882da10",
+  "download_url": "https://huggingface.co/ayushgupta7777/safetyvision-yolov8/resolve/56a71758b55f0e9f2b4b2d6b51a779a1f882da10/best.onnx",
+  "filename": "safetyvision_yolov8n.onnx",
+  "sha256": "aac7072cd9b4c1225b980ce2034887c4fb5f18eaedb7ada17525377989503762",
+  "bytes": 12180481,
+  "license": "AGPL-3.0",
+  "license_url": "https://www.gnu.org/licenses/agpl-3.0.html",
+  "format": "ONNX",
+  "input": {"name": "images", "shape": [1,3,640,640], "dtype": "float32", "range": [0,1], "colour": "RGB", "resize": "letterbox"},
+  "output": {"name": "output0", "shape": [1,17,8400], "layout": "xywh plus 13 class probabilities; class-aware NMS required"},
+  "class_names": ["Fall-Detected","Gloves","Goggles","Hardhat","Mask","NO-Gloves","NO-Goggles","NO-Hardhat","NO-Mask","NO-Safety Vest","No_Harness","Person","Safety Vest"],
+  "used_classes": ["Hardhat","NO-Hardhat","Person"],
+  "training_provenance": "The model author describes v1 as pretrained YOLOv8n fine-tuned on the public PPE-Combined v1 Roboflow dataset. The course project does not retrain these weights.",
+  "project_accuracy": {"measured": false, "mAP": null, "note": "Upstream benchmark metrics are not project results and are not presented as mine-domain accuracy."}
+}
